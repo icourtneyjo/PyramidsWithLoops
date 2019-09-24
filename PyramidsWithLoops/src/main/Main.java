@@ -14,12 +14,37 @@ package main;
 public class Main {
 
 	public static void main(String[] args) {
-		int lines = 5;
-		for (int i = 0; i < lines; i++) {
-			for (int j = 0; j < i+1; j++) {
-				System.out.print(j);
-			}
-			System.out.println("");
+	
+		 int j,n,s,x;
+		char i;
+	            
+		 
+		 n=5;
+		 s=n+4-1;
+		 
+		  for(i=1;i<=n;i++)
+          {
+          	
+          	{
+	            	
+	            	
+          	}
+          	 for(x=s;x!= 1;x--)
+             {
+            System.out.print(" ");
+             }
+	             for(j=1;j<=i;j++)
+	             {
+	            	 if (i==2)
+	            		 i= i+ "i";
+	            	 System.out.print(i+ " ");
+	              }
+	         	System.out.println();
+	             s--;
+	           
+	             
+	            	 
+	            
 		}
 	}
 }
