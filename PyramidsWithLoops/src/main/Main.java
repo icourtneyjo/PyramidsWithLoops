@@ -13,7 +13,7 @@
 package main;
 public class Main {
     public static void main(String[] args) {
-        int rows = 5, k = 0, count = 0, count1 = 0;
+        int rows = 5, k = 0, count = 0, count2 = 0;
         for(int i = 1; i <= rows; ++i) {
             for(int space = 1; space <= rows - i; ++space) {
                 System.out.print("  ");
@@ -25,12 +25,12 @@ public class Main {
                     ++count;
                 }
                 else {
-                    ++count1;
+                    ++count2;
                     System.out.print((i) + " ");
                 }
                 ++k;
             }
-            count1 = count = k = 0;
+            count2 = count = k = 0;
             System.out.println();
         }
     }
