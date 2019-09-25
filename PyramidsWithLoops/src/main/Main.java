@@ -9,42 +9,29 @@
      4444444
     555555555 
 */
+
 package main;
-
 public class Main {
-
-	public static void main(String[] args) {
-	
-		 int j,n,s,x;
-		char i;
-	            
-		 
-		 n=5;
-		 s=n+4-1;
-		 
-		  for(i=1;i<=n;i++)
-          {
-          	
-          	{
-	            	
-	            	
-          	}
-          	 for(x=s;x!= 1;x--)
-             {
-            System.out.print(" ");
-             }
-	             for(j=1;j<=i;j++)
-	             {
-	            	 if (i==2)
-	            		 i= i+ "i";
-	            	 System.out.print(i+ " ");
-	              }
-	         	System.out.println();
-	             s--;
-	           
-	             
-	            	 
-	            
-		}
-	}
+    public static void main(String[] args) {
+        int rows = 5, k = 0, count = 0, count1 = 0;
+        for(int i = 1; i <= rows; ++i) {
+            for(int space = 1; space <= rows - i; ++space) {
+                System.out.print("  ");
+                ++count;
+            }
+            while(k != 2 * i - 1) {
+                if (count <= rows - 1) {
+                    System.out.print((i ) + " ");
+                    ++count;
+                }
+                else {
+                    ++count1;
+                    System.out.print((i) + " ");
+                }
+                ++k;
+            }
+            count1 = count = k = 0;
+            System.out.println();
+        }
+    }
 }
